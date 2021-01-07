@@ -70,12 +70,12 @@ char* ReadProcEntry(char *filename)
 	return real_boxtype_name;
 }
 
-char *_getVisionVersion()
+char *_getOpenpliVersion()
 {
 	return strdup(OPENPLIVERSION);
 }
 
-char *_getVisionRevision()
+char *_getOpenpliRevision()
 {
 	return strdup(OPENPLIREVISION);
 }
