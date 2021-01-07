@@ -72,12 +72,12 @@ char* ReadProcEntry(char *filename)
 
 char *_getVisionVersion()
 {
-	return strdup(VISIONVERSION);
+	return strdup(OPENPLIVERSION);
 }
 
 char *_getVisionRevision()
 {
-	return strdup(VISIONREVISION);
+	return strdup(OPENPLIREVISION);
 }
 
 char *_getDeveloperName()
