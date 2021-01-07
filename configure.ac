@@ -23,13 +23,13 @@ AX_PYTHON_DEVEL
 AX_PTHREAD
 
 AC_ARG_WITH(openpliversion,
-	[  --with-openpliversion=NUMBER vision version [[number,...]]],
+	[  --with-openpliversion=NUMBER openpli version [[number,...]]],
 	[OPENPLIVERSION="$withval"],[OPENPLIVERSION=""])
 AC_SUBST(OPENPLIVERSION)
 AC_DEFINE_UNQUOTED(OPENPLIVERSION,"$OPENPLIVERSION",[openpli version])
 
 AC_ARG_WITH(openplirevision,
-	[  --with-openplirevision=NUMBER vision revision [[number,...]]],
+	[  --with-openplirevision=NUMBER openpli revision [[number,...]]],
 	[OPENPLIREVISION="$withval"],[OPENPLIREVISION=""])
 AC_SUBST(OPENPLIREVISION)
 AC_DEFINE_UNQUOTED(OPENPLIREVISION,"$OPENPLIREVISION",[openpli revision])
