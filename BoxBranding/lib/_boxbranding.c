@@ -70,8 +70,8 @@ MAKE_STRING_FUNCTION(getFHDSkin)
 
 /* Module specification */
 static PyMethodDef boxbrandingMethods[] = {
-	{ "getVisionVersion", getOpenpliVersion, METH_NOARGS, NULL },
-	{ "getVisionRevision", getOpenpliRevision, METH_NOARGS, NULL },
+	{ "getOpenpliVersion", getOpenpliVersion, METH_NOARGS, NULL },
+	{ "getOpenpliRevision", getOpenpliRevision, METH_NOARGS, NULL },
 	{ "getDeveloperName", getDeveloperName, METH_NOARGS, NULL },
 	{ "getBoxBrand", getBoxBrand, METH_NOARGS, NULL },
 	{ "getOEVersion", getOEVersion, METH_NOARGS, NULL },
