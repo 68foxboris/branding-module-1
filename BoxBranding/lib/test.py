@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 import boxbranding
-print("getOpenpliVersion=%s<" %boxbranding.getVisionVersion())
-print("getOpenpliRevision=%s<" %boxbranding.getVisionRevision())
+print("getOpenpliVersion=%s<" %boxbranding.getOpenpliVersion())
+print("getOpenpliRevision=%s<" %boxbranding.getOpenpliRevision())
 print("getDeveloperName=%s<" %boxbranding.getDeveloperName())
 print("getBoxBrand=%s<" %boxbranding.getBoxBrand())
 print("getOEVersion=%s<" %boxbranding.getOEVersion())
