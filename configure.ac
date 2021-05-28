@@ -22,17 +22,23 @@ AM_PATH_PYTHON
 AX_PYTHON_DEVEL
 AX_PTHREAD
 
-AC_ARG_WITH(openpliversion,
-	[  --with-openpliversion=NUMBER openpli version [[number,...]]],
-	[OPENPLIVERSION="$withval"],[OPENPLIVERSION=""])
-AC_SUBST(OPENPLIVERSION)
-AC_DEFINE_UNQUOTED(OPENPLIVERSION,"$OPENPLIVERSION",[openpli version])
+AC_ARG_WITH(imgversion,
+	[  --with-imgversion=NUMBER image version [[number,...]]],
+	[IMGVERSION="$withval"],[IMGVERSION=""])
+AC_SUBST(IMGVERSION)
+AC_DEFINE_UNQUOTED(IMGVERSION,"$IMGVERSION",[image version])
 
-AC_ARG_WITH(openplirevision,
-	[  --with-openplirevision=NUMBER openpli revision [[number,...]]],
-	[OPENPLIREVISION="$withval"],[OPENPLIREVISION=""])
-AC_SUBST(OPENPLIREVISION)
-AC_DEFINE_UNQUOTED(OPENPLIREVISION,"$OPENPLIREVISION",[openpli revision])
+AC_ARG_WITH(imgrevision,
+	[  --with-imgrevision=NUMBER image revision [[number,...]]],
+	[IMGREVISION="$withval"],[IMGREVISION=""])
+AC_SUBST(IMGREVISION)
+AC_DEFINE_UNQUOTED(IMGREVISION,"$IMGREVISION",[image revision])
+
+AC_ARG_WITH(imglanguage,
+	[  --with-imglanguage=NUMBER image language [[english,...]]],
+	[IMGLANGUAGE="$withval"],[IMGLANGUAGE=""])
+AC_SUBST(IMGLANGUAGE)
+AC_DEFINE_UNQUOTED(IMGLANGUAGE,"$IMGLANGUAGE",[image language])
 
 AC_ARG_WITH(developername,
 	[  --with-developername=NAME developer name [[foxbob,...]]],
@@ -45,6 +51,11 @@ AC_ARG_WITH(boxbrand,
 	[BOXBRAND="$withval"],[BOXBRAND=""])
 AC_SUBST(BOXBRAND)
 AC_DEFINE_UNQUOTED(BOXBRAND,"$BOXBRAND",[box brand])
+AC_ARG_WITH(displaybrand,
+	[  --with-displaybrand=NAME box display brand [[dreambox,...]]],
+	[DISPLAYBRAND="$withval"],[DISPLAYBRAND=""])
+AC_SUBST(DISPLAYBRAND)
+AC_DEFINE_UNQUOTED(DISPLAYBRAND,"$DISPLAYBRAND",[box display brand])
 
 AC_ARG_WITH(oever,
 	[  --with-oever=NUMBER oe number [[10.1,...]]],
@@ -63,6 +74,11 @@ AC_ARG_WITH(boxtype,
 	[BOXTYPE="$withval"],[BOXTYPE=""])
 AC_SUBST(BOXTYPE)
 AC_DEFINE_UNQUOTED(BOXTYPE,"$BOXTYPE",[box type])
+AC_ARG_WITH(displaymodel,
+	[  --with-displaymodel=NAME box display model [[dm800,...]]],
+	[DISPLAYMODEL="$withval"],[DISPLAYMODEL=""])
+AC_SUBST(DISPLAYMODEL)
+AC_DEFINE_UNQUOTED(DISPLAYMODEL,"$DISPLAYMODEL",[box display model])
 
 AC_ARG_WITH(machinebuild,
 	[  --with-machinebuild=NAME stb platform [[dm800,...]]],

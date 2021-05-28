@@ -10,13 +10,16 @@ int fileExist(const char* filename);
 
 char *ReadProcEntry(char *filename);
 
-char *_getOpenpliVersion();
-char *_getOpenpliRevision();
+char *_getIMGVersion();
+char *_getIMGRevision();
+char *_getIMGLanguage();
 char *_getDeveloperName();
 char *_getBoxBrand();
+char *_getDisplayBrand();
 char *_getOEVersion();
 char *_getImageDistro();
 char *_getBoxType();
+char *_getDisplayModel();
 char *_getMachineBuild();
 char *_getImageVersion();
 char *_getImageBuild();

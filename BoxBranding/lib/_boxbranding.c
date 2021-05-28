@@ -16,13 +16,16 @@ static PyObject* name(PyObject* self, PyObject* args) \
 } \
 
 /* Available functions */
-MAKE_STRING_FUNCTION(getOpenpliVersion)
-MAKE_STRING_FUNCTION(getOpenpliRevision)
+MAKE_STRING_FUNCTION(getIMGVersion)
+MAKE_STRING_FUNCTION(getIMGRevision)
+MAKE_STRING_FUNCTION(getIMGLanguage)
 MAKE_STRING_FUNCTION(getDeveloperName)
 MAKE_STRING_FUNCTION(getBoxBrand)
+MAKE_STRING_FUNCTION(getDisplayBrand)
 MAKE_STRING_FUNCTION(getOEVersion)
 MAKE_STRING_FUNCTION(getImageDistro)
 MAKE_STRING_FUNCTION(getBoxType)
+MAKE_STRING_FUNCTION(getDisplayModel)
 MAKE_STRING_FUNCTION(getMachineBuild)
 MAKE_STRING_FUNCTION(getImageVersion)
 MAKE_STRING_FUNCTION(getImageBuild)
@@ -70,13 +73,16 @@ MAKE_STRING_FUNCTION(getFHDSkin)
 
 /* Module specification */
 static PyMethodDef boxbrandingMethods[] = {
-	{ "getOpenpliVersion", getOpenpliVersion, METH_NOARGS, NULL },
-	{ "getOpenpliRevision", getOpenpliRevision, METH_NOARGS, NULL },
+	{ "getIMGVersion", getIMGVersion, METH_NOARGS, NULL },
+	{ "getIMGRevision", getIMGRevision, METH_NOARGS, NULL },
+	{ "getIMGLanguage", getIMGLanguage, METH_NOARGS, NULL },
 	{ "getDeveloperName", getDeveloperName, METH_NOARGS, NULL },
 	{ "getBoxBrand", getBoxBrand, METH_NOARGS, NULL },
+	{ "getDisplayBrand", getDisplayBrand, METH_NOARGS, NULL },
 	{ "getOEVersion", getOEVersion, METH_NOARGS, NULL },
 	{ "getImageDistro", getImageDistro, METH_NOARGS, NULL },
 	{ "getBoxType", getBoxType, METH_NOARGS, NULL },
+	{ "getDisplayModel", getDisplayModel, METH_NOARGS, NULL },
 	{ "getMachineBuild", getMachineBuild, METH_NOARGS, NULL },
 	{ "getImageVersion", getImageVersion, METH_NOARGS, NULL },
 	{ "getImageBuild", getImageBuild, METH_NOARGS, NULL },

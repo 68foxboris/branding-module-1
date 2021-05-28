@@ -70,14 +70,19 @@ char* ReadProcEntry(char *filename)
 	return real_boxtype_name;
 }
 
-char *_getOpenpliVersion()
+char *_getIMGVersion()
 {
-	return strdup(OPENPLIVERSION);
+	return strdup(IMGVERSION);
 }
 
-char *_getOpenpliRevision()
+char *_getIMGRevision()
 {
-	return strdup(OPENPLIREVISION);
+	return strdup(IMGREVISION);
+}
+
+char *_getIMGLanguage()
+{
+	return strdup(IMGLANGUAGE);
 }
 
 char *_getDeveloperName()
@@ -88,6 +93,11 @@ char *_getDeveloperName()
 char *_getBoxBrand()
 {
 	return strdup(BOXBRAND);
+}
+
+char *_getDisplayBrand()
+{
+	return strdup(DISPLAYBRAND);
 }
 
 char *_getOEVersion()
@@ -103,6 +113,11 @@ char *_getImageDistro()
 char *_getBoxType()
 {
 	return strdup(BOXTYPE);
+}
+
+char *_getDisplayModel()
+{
+	return strdup(DISPLAYMODEL);
 }
 
 char *_getMachineBuild()
